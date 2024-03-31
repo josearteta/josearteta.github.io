@@ -1,8 +1,6 @@
 ---
 about:
-  template: trestles
-  image-shape: round
-  image-width: 15em
+  template: jolla
   id: about-block
   image: "img/my_image.jpg"
   links:
@@ -20,8 +18,11 @@ about:
       href: "mailto:jose.p.arteta@gmail.com"    
 ---
 
-::: {#about-block}
+::: {.row}
+::: {.col width="50%"}
+![My Image](img/my_image.jpg)
 :::
+::: {.col width="50%"}
 
 # About Me
 
