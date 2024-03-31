@@ -1,0 +1,26 @@
+{
+  "404.qmd": {
+    "404.html": "1fc4b7bf"
+  },
+  "cv/index.qmd": {
+    "index.html": "e1c26ed8"
+  },
+  "index.qmd": {
+    "index.html": "6681e69c"
+  },
+  "photography/index.qmd": {
+    "index.html": "3be17540"
+  },
+  "projects/index.qmd": {
+    "index.html": "bc606242"
+  },
+  "blog/index.qmd": {
+    "index.html": "01abc7a2"
+  },
+  "presentations/index.qmd": {
+    "index.html": "5e2ebb5f"
+  },
+  "research/index.qmd": {
+    "index.html": "9f768e9b"
+  }
+}
