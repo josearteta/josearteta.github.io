@@ -1,8 +1,37 @@
 ---
 title: "Research"
+layout: single
+classes: wide
+permalink: /papers/
 ---
 
-## Working Papers
+##  Working Papers 
+
+**No Need for Speed: Speed Limit Reductions Do Not Increase Vehicle Robberies**<br/>
+<small>[ <a href="javascript:void(0);" onclick="toggleVisibility('no-need-for-speed')">Abstract</a> | [Draft](#) ]</small>
+
+<div id="no-need-for-speed" style="display: none; text-align: justify; line-height: 1.2"><small>
+Insert your abstract content here. This text will be hidden initially and will only be displayed when the "Abstract" link is clicked.
+</small><br><br/></div>
+
+<!-- You can add more papers following the same structure -->
 
 
-## Works in Progress
+
+##  Works in Progress
+
+
+
+
+
+
+<script>
+function toggleVisibility(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+</script>
