@@ -1,8 +1,10 @@
 ---
 about:
-  template: jolla
+  template: trestles
   id: about-block
   image: "img/my_image.jpg"
+  image-shape: round
+  image-width: 15em
   links:
     - icon: twitter
       text: Twitter
@@ -18,41 +20,18 @@ about:
       href: "mailto:jose.p.arteta@gmail.com"    
 ---
 
-::: {.row}
-::: {.col width="50%"}
-![My Image](img/my_image.jpg)
-:::
-::: {.col width="50%"}
 
 # About Me
 
 I am a brazilian-colombian economist. My main research interests include Urban and Development Economics, with a secondary interest into Econometric Theory.
 
 ## Education
-- *M.Sc. in Economics* | 2022 - 2024 |
-EPGE-FGV | Rio de Janeiro, Brazil
+- **M.Sc. in Economics** | 2022 - 2024 |
+EPGE-FGV | *Rio de Janeiro, Brazil*
 
 
-- *B.A. in Economics* | 2017 - 2021 |
-University of the Andes | Bogotá, Colombia
-
-
-
-
-
-
-
-
-On this website, you will find a selection of my published works, including scholarly articles, monographs, and translations. You will also find news and updates on my current research projects, as well as information on upcoming events and conferences where I will be speaking. I invite you to explore my website and learn more about my life's work as one of Middle-earth's greatest scholars and thinkers.
-Please feel free to [contact me](mailto:mail.marvinschmitt@gmail.com) if you have any questions or would like to discuss potential projects.
-
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```
-
-
+- **B.A. in Economics** | 2017 - 2021 |
+University of the Andes | *Bogotá, Colombia*
 
 
 
