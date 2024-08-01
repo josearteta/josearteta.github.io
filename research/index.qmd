@@ -7,7 +7,7 @@ permalink: /papers/
 
 ##  Working Papers 
 **No Need for Speed: Speed Limit Reductions Do Not Increase Vehicle Robberies**<br/>
-<small>[ <a href="javascript:void(0);" onclick="toggleVisibility('no-need-for-speed')">Abstract</a> | [Draft](papers/no-need-for-speed.pdf) ]</small>
+<small>[ <a href="javascript:void(0);" onclick="toggleVisibility('no_need_for_speed')">Abstract</a> | [Draft](papers/no-need-for-speed.pdf) ]</small>
 
 <div id="no-need-for-speed" style="display: none; text-align: justify; line-height: 1.2"><small>
 I analyze the effect of a widespread speed reduction policy implemented in the city of São Paulo on vehicle robberies. Exploring the staggered nature of the policy implementation, I estimate an event study robust to heterogeneity and different adoptions of the treatment, using crime data on reported
