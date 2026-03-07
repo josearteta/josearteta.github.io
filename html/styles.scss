@@ -206,10 +206,11 @@ code {
 
 
 // ── Main content area ─────────────────────────────────────────────────────────
-#quarto-content {
-  main {
-    max-width: 720px;
-  }
+#quarto-content main {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2rem;
+  max-width: 100%;
 }
 
 // ── Footer ────────────────────────────────────────────────────────────────────
