@@ -1,38 +1,48 @@
 ---
+title: "José Arteta"
 about:
   template: trestles
   id: about-block
   image: "img/my_image.jpg"
   image-shape: round
-  image-width: 15em
+  image-width: 13em
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/puentes_arteta
+    - icon: envelope
+      text: Email
+      href: "mailto:jose.p.arteta@gmail.com"
     - icon: github
-      text: Github
+      text: GitHub
       href: https://github.com/josearteta
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/jose-arteta/
-    - icon: envelope
-      text: Email
-      href: "mailto:jose.p.arteta@gmail.com"    
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/puentes_arteta
 ---
 
+::: {#about-block}
+:::
 
-# About Me
+[PhD Student in Economics &nbsp;·&nbsp; Urban & Development Economics]{.home-tagline}
 
-I am a brazilian-colombian economist. My main research interests include Urban and Development Economics, with a secondary interest into Econometric Theory.
+I am a Brazilian-Colombian economist. My research studies how public policies shape urban outcomes, with a focus on crime, mobility, and cities in the developing world. I use quasi-experimental methods and causal inference.
 
 ## Education
-- **M.Sc. in Economics** | 2022 - 2024 |
-EPGE-FGV | *Rio de Janeiro, Brazil*
 
+**Ph.D. in Economics** · 2025 – Present
+University of British Columbia · *Vancouver, Canada*
 
-- **B.A. in Economics** | 2017 - 2021 |
-University of the Andes | *Bogotá, Colombia*
+**M.Sc. in Economics** · 2022 – 2024
+EPGE-FGV · *Rio de Janeiro, Brazil*
 
+**B.A. in Economics** · 2017 – 2021
+Universidad de los Andes · *Bogotá, Colombia*
 
+## Research
 
+**No Need for Speed: Speed Limit Reductions Do Not Increase Vehicle Robberies** &nbsp;<span class="badge-wp">Working Paper</span>
 
+I analyze the causal effect of São Paulo's 2015 speed reduction policy on vehicle robberies. Using a staggered difference-in-differences design robust to treatment heterogeneity, I find that the policy had no significant effect on crime — contradicting concerns that slower traffic exposes drivers to robbery.
+
+[[PDF](research/papers/no-need-for-speed.pdf)] &nbsp; [[Abstract & Details](research/index.qmd)]

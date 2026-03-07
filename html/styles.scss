@@ -1,124 +1,285 @@
 /*-- scss:defaults --*/
 
-/* From https://github.com/andrewheiss/ath-quarto/blob/main/html/ath.scss */
+// ── Palette ───────────────────────────────────────────────────────────────────
+$bg:              #0d1117 !default;
+$surface:         #161b22 !default;
+$surface-2:       #21262d !default;
+$border:          #30363d !default;
 
-$white:    #ffffff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #373a3c !default;
-$gray-900: #212529 !default;
-$black:    #000000 !default;
+$text:            #e6edf3 !default;
+$text-muted:      #8b949e !default;
 
-$blue:    #2780e3 !default;
-$indigo:  #6610f2 !default;
-$purple:  #170C3A !default;
-$pink:    #A52C60 !default;
-$red:     #CF4446 !default;
-$orange:  #EE6A24 !default;
-$light-orange:  #FB9E07 !default;
-$yellow:  #F6D645 !default;
-$green:   #118230 !default;
-$teal:    #068194 !default;
-$cyan:    #3093CF !default;
+$accent:          #58a6ff !default;   // bright blue — readable on dark
+$accent-hover:    #79b8ff !default;
+$accent-dim:      #1f6feb !default;
 
-$primary:   $teal!default;
-$secondary: $gray-700 !default;
-$success:   $green !default;
-$info:      $cyan !default;
-$warning:   $orange !default;
-$danger:    $red !default;
-$light:     $gray-400 !default;
-$dark:      $black !default;
+// Bootstrap overrides
+$body-bg:         $bg !default;
+$body-color:      $text !default;
+$headings-color:  #f0f6fc !default;
 
-
-
-// Links
-$link-color: $primary !default;
+$primary:         $accent !default;
+$secondary:       $text-muted !default;
+$link-color:      $accent !default;
 $link-decoration: none !default;
-$link-hover-color: $red !default;
+$link-hover-color: $accent-hover !default;
 $link-hover-decoration: underline !default;
 
-// Footer
-$footer-bg: $gray-900 !default;
-$footer-fg: $gray-300 !default;
+$navbar-bg:       $surface !default;
+$navbar-fg:       $text !default;
+$navbar-hl:       $accent !default;
 
-// Inline code
-$code-bg: $gray-200 !default;
-$code-color: $gray-900 !default;
+$footer-bg:       $surface !default;
+$footer-fg:       $text-muted !default;
 
-// TOC
-$toc-color: $orange;
-$toc-font-size: 1em;
+$code-bg:         $surface-2 !default;
+$code-color:      #79c0ff !default;
 
-// Code copy
-$btn-code-copy-color-active: $orange !default;
-
+$font-size-base:  1rem !default;
 
 /*-- scss:rules --*/
 
+// ── Fonts ─────────────────────────────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
 
-.nav-footer {
-    align-items: flex-start;  // Align all flex items to the top
-    flex-wrap: wrap;
-    border: 0 !important;
-    min-height: 3em;
-    //font-family: $footer-font-family;
+// ── Base ──────────────────────────────────────────────────────────────────────
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  background-color: $bg;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+}
 
-    a {
-        color: $primary;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 600;
+  color: $headings-color;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  font-weight: 500;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $border;
+}
+
+p {
+  color: $text;
+  line-height: 1.75;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $border;
+  margin: 2rem 0;
+}
+
+strong {
+  color: $headings-color;
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: 'DM Mono', 'Fira Code', monospace;
+}
+
+pre {
+  background-color: $surface-2;
+  border: 1px solid $border;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+code {
+  background-color: $surface-2;
+  color: $code-color;
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// ── Navbar ────────────────────────────────────────────────────────────────────
+.navbar {
+  background-color: $surface !important;
+  border-bottom: 1px solid $border;
+  padding: 0.5rem 1.5rem;
+
+  .navbar-brand {
+    color: $text !important;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+
+    img {
+      opacity: 0.9;
     }
+  }
 
-    .faux-block {
-        display: block;
-        padding-bottom: 0.4em;
+  .nav-link {
+    color: $text-muted !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.4rem 0.75rem !important;
+    border-radius: 4px;
+    transition: color 0.15s, background 0.15s;
+
+    &:hover {
+      color: $text !important;
+      background-color: $surface-2;
     }
+  }
 
-    // In the default Quarto template, .nav-footer-center has position: absolute 
-    // turned on, which makes the div not be a flex item
-    // This changes that so that it *is* a flex item
-    .nav-footer-center {
-        text-align: center;
-        position: inherit;
-        margin-top: 0;
+  .nav-link.active {
+    color: $accent !important;
+    font-weight: 500;
+    background: none;
+  }
 
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            margin-top: 0.5em;
-            margin-bottom: 1.5em;
-        }
+  // search box
+  .navbar-search input {
+    background-color: $surface-2;
+    border: 1px solid $border;
+    color: $text;
+    border-radius: 6px;
+
+    &::placeholder { color: $text-muted; }
+  }
+}
+
+// ── About / Trestles ──────────────────────────────────────────────────────────
+.about-entity .about-image img {
+  border: 2px solid $border;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 8px 40px rgba(88, 166, 255, 0.15);
+  }
+}
+
+.about-entity .about-links {
+  margin-top: 1.25rem;
+
+  .about-link {
+    color: $text-muted !important;
+    border: 1px solid $border;
+    border-radius: 6px;
+    padding: 0.3em 0.8em;
+    font-size: 0.875rem;
+    transition: all 0.15s ease;
+
+    &:hover {
+      color: $accent !important;
+      border-color: $accent;
+      background-color: rgba(88, 166, 255, 0.06);
+      text-decoration: none !important;
     }
+  }
+}
 
-    // When the screen is medium or smaller, make each footer chunk be 100% width 
-    // and centered; otherwise make them be 33% width and left/right/centerd
-    .nav-footer-left,
-    .nav-footer-right,
-    .nav-footer-center {
-        text-align: center;
-        width: 100%;
-        min-height: 2em;
-    }
+.home-tagline {
+  display: block;
+  color: $text-muted;
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
 
-    @media (min-width: map-get($grid-breakpoints, md)) {
-        .nav-footer-left {
-            text-align: left;
-        }
-
-        .nav-footer-right {
-            text-align: right;
-        }
-
-        .nav-footer-left,
-        .nav-footer-right,
-        .nav-footer-center {
-            flex: 1 1 33%;
-        }
-    }
+// Working paper badge
+.badge-wp {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: $text-muted;
+  background: $surface-2;
+  border: 1px solid $border;
+  border-radius: 4px;
+  padding: 0.1em 0.55em;
+  vertical-align: middle;
 }
 
 
-// Fonts
-  @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// ── Main content area ─────────────────────────────────────────────────────────
+#quarto-content {
+  main {
+    max-width: 720px;
+  }
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────────
+.nav-footer {
+  background-color: $surface;
+  border-top: 1px solid $border !important;
+  border: 0;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 3em;
+  font-size: 0.85rem;
+  color: $text-muted;
+
+  a { color: $accent; }
+
+  .faux-block {
+    display: block;
+    padding-bottom: 0.4em;
+  }
+
+  .nav-footer-center {
+    text-align: center;
+    position: inherit;
+    margin-top: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .nav-footer-left,
+  .nav-footer-right,
+  .nav-footer-center {
+    text-align: center;
+    width: 100%;
+    min-height: 2em;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .nav-footer-left  { text-align: left; }
+    .nav-footer-right { text-align: right; }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center { flex: 1 1 33%; }
+  }
+}
+
+// ── Buttons ───────────────────────────────────────────────────────────────────
+.btn-primary {
+  background-color: $accent-dim;
+  border-color: $accent-dim;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $accent;
+    border-color: $accent;
+    color: #0d1117;
+  }
+}
+
+// ── Misc ──────────────────────────────────────────────────────────────────────
+::selection {
+  background: rgba(88, 166, 255, 0.25);
+  color: $headings-color;
+}
+
+a {
+  transition: color 0.15s;
+}

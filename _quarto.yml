@@ -3,7 +3,7 @@
 # website settings
 website:
   title: "José Arteta"                                # Your name
-  description: "Hi, I am an Economist and currently a Master Student in Economics at EPGE-FGV."   # A brief slogan (optional)
+  description: "PhD Student in Economics | Urban & Development Economics"   # A brief slogan (optional)
   image: img/my_image.jpg
   
   favicon: img/favicon.png
@@ -67,9 +67,9 @@ execute:
 
 format:
   html:
-    fontsize: 1.1em
-    theme: 
-      - pulse
+    fontsize: 1rem
+    theme:
+      - darkly
       - html/styles.scss
     toc: false
     code-link: true
@@ -77,5 +77,5 @@ format:
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true
-    mainfont: Atkinson Hyperlegible
+    mainfont: "DM Sans"
     

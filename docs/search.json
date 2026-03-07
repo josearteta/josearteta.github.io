@@ -9,23 +9,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "José Arteta",
     "section": "",
-    "text": "I am a brazilian-colombian economist. My main research interests include Urban and Development Economics, with a secondary interest into Econometric Theory.\n\n\n\nM.Sc. in Economics | 2022 - 2024 | EPGE-FGV | Rio de Janeiro, Brazil\nB.A. in Economics | 2017 - 2021 | University of the Andes | Bogotá, Colombia"
+    "text": "Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     Twitter\nPhD Student in Economics  ·  Urban & Development Economics\nI am a Brazilian-Colombian economist. My research studies how public policies shape urban outcomes, with a focus on crime, mobility, and cities in the developing world. I use quasi-experimental methods and causal inference."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "About Me",
-    "section": "",
-    "text": "M.Sc. in Economics | 2022 - 2024 | EPGE-FGV | Rio de Janeiro, Brazil\nB.A. in Economics | 2017 - 2021 | University of the Andes | Bogotá, Colombia"
+    "title": "José Arteta",
+    "section": "Education",
+    "text": "Education\nPh.D. in Economics · 2025 – Present University of British Columbia · Vancouver, Canada\nM.Sc. in Economics · 2022 – 2024 EPGE-FGV · Rio de Janeiro, Brazil\nB.A. in Economics · 2017 – 2021 Universidad de los Andes · Bogotá, Colombia"
   },
   {
     "objectID": "photography/index.html",
     "href": "photography/index.html",
     "title": "Photography",
     "section": "",
-    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
+    "text": "As a wizard and scholar of Middle-earth, I have been studying the magic of the natural world for centuries. Through my self-portraits, I aim to capture the essence of my own being and reflect on my own journey through time. Each photograph is a reflection of my own experiences and emotions. Through my photography, I hope to offer a glimpse into my life as a scholar and adventurer, and inspire others to reflect on their own journeys through the world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the tutorial for this template (+ download link)"
   },
   {
     "objectID": "projects/index.html",
@@ -68,5 +68,26 @@
     "title": "Research",
     "section": "Works in Progress",
     "text": "Works in Progress"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "José Arteta",
+    "section": "About",
+    "text": "About\nI am a Brazilian-Colombian economist and PhD student in Economics. My research lies at the intersection of Urban Economics and Development Economics, with a secondary interest in Econometric Theory. I use quasi-experimental and causal inference methods to study how public policies shape urban outcomes."
+  },
+  {
+    "objectID": "index.html#research-experience",
+    "href": "index.html#research-experience",
+    "title": "José Arteta",
+    "section": "Research Experience",
+    "text": "Research Experience\nWorking Paper\nNo Need for Speed: Speed Limit Reductions Do Not Increase Vehicle Robberies I analyze the causal effect of São Paulo’s 2015 widespread speed reduction policy on vehicle robberies. Using the staggered nature of the implementation and an event study design robust to treatment heterogeneity, I show that the overall effect on treated road segments is null or small and negative — contradicting concerns that slower traffic increases drivers’ exposure to crime. [Draft]  |  [Research Page]"
+  },
+  {
+    "objectID": "index.html#research",
+    "href": "index.html#research",
+    "title": "José Arteta",
+    "section": "Research",
+    "text": "Research\nNo Need for Speed: Speed Limit Reductions Do Not Increase Vehicle Robberies  Working Paper\nI analyze the causal effect of São Paulo’s 2015 speed reduction policy on vehicle robberies. Using a staggered difference-in-differences design robust to treatment heterogeneity, I find that the policy had no significant effect on crime — contradicting concerns that slower traffic exposes drivers to robbery.\n[PDF]   [Abstract & Details]"
   }
 ]
