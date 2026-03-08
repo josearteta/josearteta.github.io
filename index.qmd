@@ -5,8 +5,8 @@ about:
   template: trestles
   id: about-block
   image: "img/my_image.jpg"
-  image-shape: round
-  image-width: 13em
+  image-shape: rounded
+  image-width: 16em
   links:
     - icon: envelope
       text: Email
@@ -21,11 +21,11 @@ about:
       text: Twitter
       href: https://twitter.com/puentes_arteta
 ---
-
 ::: {#about-block}
-:::
-
 [PhD Student in Economics &nbsp;·&nbsp; Urban & Development Economics]{.home-tagline}
+
+
+## About Me
 
 I am a Brazilian-Colombian economist. My research studies how public policies shape urban outcomes, with a focus on crime, mobility, and cities in the developing world. I use quasi-experimental methods and causal inference.
 
