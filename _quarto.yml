@@ -69,7 +69,6 @@ format:
   html:
     fontsize: 1rem
     theme:
-      - darkly
       - html/styles.scss
     toc: false
     code-link: true

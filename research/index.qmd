@@ -1,25 +1,6 @@
 ---
 title: "Research"
 page-layout: full
-about:
-  template: trestles
-  id: about-block
-  image: "../img/my_image.jpg"
-  image-shape: rounded
-  image-width: 16em
-  links:
-    - icon: envelope
-      text: Email
-      href: "mailto:jose.p.arteta@gmail.com"
-    - icon: github
-      text: GitHub
-      href: https://github.com/josearteta
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/jose-arteta/
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/puentes_arteta
 ---
 
 ::: {#about-block}
