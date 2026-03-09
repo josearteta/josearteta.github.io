@@ -2,9 +2,9 @@
   {
     "objectID": "cv/index.html",
     "href": "cv/index.html",
-    "title": "Curriculum vitae",
+    "title": "CV",
     "section": "",
-    "text": "Download current CV\n  \n\n\n  \n\n\nView the tutorial for this template (+ download link)"
+    "text": "{css echo=FALSE} .embed-container {     position: relative;     padding-bottom: 129%;     height: 0;     overflow: hidden;     max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%; }\n\n  \n\n  \n  \n\n  \n     Download current CV"
   },
   {
     "objectID": "index.html",

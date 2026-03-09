@@ -1,12 +1,15 @@
 ---
 title: "CV"
 page-layout: full
+about:
+  template: trestles
+  id: about-block
 execute:
   freeze: true
 resources:
-  - "cv.pdf"
+  - cv.pdf
 cv:
-  pdf: "cv.pdf"
+  pdf: cv.pdf
 ---
 
 ```{css echo=FALSE}
