@@ -1,9 +1,6 @@
 ---
 title: "CV"
 page-layout: full
-about:
-  template: trestles
-  id: about-block
 execute:
   freeze: true
 resources:
